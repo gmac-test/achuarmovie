@@ -1,1 +1,197 @@
-My Github Page
+---
+layout: default
+---
+
+<div class="topbar">
+  <div class="container">
+    <ul class="nav">
+      <li class="active"><a href="#chumpi">Watch</a></li>
+      <li><a href="#achuar">The Achuar</a></li>
+      <li><a href="#territory">Territory</a></li>
+      <li><a href="#oil">Oil</a></li>
+      <li class="highlight"><a href="#action">Get Involved</a></li>
+    </ul>
+  </div>
+</div>
+
+{% include share.html %}
+
+<div id="{{ page.title | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' }}">
+  <div class="container">
+    {{ page.content }}
+  </div>
+</div>
+
+<div id="achuar">
+  <div class="container">
+    
+    <h2>The Achuar</h2>
+    <div class="three-images cf">
+      <%= image_tag "achuar-woman.jpg", :size => "250x288" %>
+      <%= image_tag "achuar-woman-2.jpg", :size => "250x288" %>
+      <%= image_tag "achuar-man.jpg", :size => "250x288" %>
+    </div>
+    <p>Around 16,000 indigenous Achuar live in small villages along the rivers and in the headwaters of the Pastaza, Corrientes, and Morona river basins on both sides of the Peru–Ecuador border. In this remote and biodiverse area of tropical rainforest the rivers and forests provide the Achuar with water for drinking and bathing, fish, animals, wild fruits, insects, mushrooms to eat and all the materials they need to build and thatch their large oval houses and to make the canoes, baskets, stools, ceramic bowls, bags, feather crowns, musical instruments and all the other items they need and use on a daily basis.</p>
+
+    <p>They also have large gardens where they grow many different agricultural crops including plants for eating, making drinks, painting and adorning their bodies, making household utensils, medicines, poisons and some with special powers that help you dream, communicate with the spirits, see your future or bewitch and seduce a desired lover. Amongst all the species the Achuar grow, wayus, manioc and tobacco are three crucial to nurturing the Achuar mind, body and spirit.</p>
+    <div class="quote-left">
+      <blockquote class="wikia">“Wikia achuar aintsuitgai”</blockquote>
+      <cite>"I am an Achuar person"</cite>
+    </div>
+    <p>For many years these Achuar communities have dreamt of introducing themselves, their way of life and the beauty of their ancestral lands to the rest of the country and the world. For the Achuar, a dream is not simply a passing, nocturnal illusion without relation to one’s waking life. On the contrary, dreams are gateways allowing communication with the spirits of their ancestors, who come to visit and talk to the living, giving them advice and a vision of their future so that they can tread a clear path in life.</p>
+
+    <p>The vision which the Achuar share is to protect their ancestral lands and leave them healthy and intact to their children and grandchildren. Although very few city dwellers have heard about them, the Achuar know about life in the cities, and their own lives are far from being cut off from the pressures of the world economy, and its impacts upon the environment. The Peruvian State has categorised their lands as open for petroleum exploration, however in doing so it has not taken into account the vision which the Achuar share and which they have received through dreams from their ancestors.</p>
+
+    <hr />
+
+    <h2>Daily Life</h2>
+
+    <div id="slideshow" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="active item">
+          <%= image_tag "wayus-man-fire.jpg", :size => "462x600" %>
+          <div class="carousel-caption">
+            <p>The Achuar day starts early. Before dawn the whole family wakes up in the darkness to drink wayus. This infusion made with leaves of the wayus bush (<em>Ilex guayusa</em>) shakes off sleepiness, is an important purgative, and stimulates concentration.</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "wayus-family-fire.jpg", :size => "800x600" %>
+          <div class="carousel-caption">
+            <p>The family shares quiet and intimate moments as they drink this tea sat around the fire, and parents take advantage of this time and the power of the wayus to give advice to their children and tell them the stories of the past. This daily ritual has led outsiders to refer to the Achuar as <em>the people of wayus</em>.</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "wayus-on-fire.jpg", :size => "800x600" %>
+          <div class="carousel-caption">
+            <p>The Achuar drink wayus in large amounts until it provokes vomiting. It is important to them that their stomachs are cleaned and emptied every morning of all the impurities that accumulate over night.</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "masato-straining.jpg", :size => "800x600" %>
+          <div class="carousel-caption"> 
+            <p>After taking wayus the Achuar are left with clean stomachs and clear minds and they then drink a little warm masato before starting their day’s work. Masato is the Achuar’s most important drink.</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "man-wife-masato.jpg", :size => "800x600" %>
+          <div class="carousel-caption">
+            <p>As the day passes and the different tasks in the gardens, hunting, fishing or construction require physical exertion, the women distribute masato to their husbands and other community members in beautiful pinin – delicately painted ceramic bowls.</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "drinking-masato.jpg", :size => "800x600" %>
+          <div class="carousel-caption">
+            <p>A woman’s masato reflects upon her abilties, and great pride is taken in its preparation and distribution. Achuar girls learn different recipes for this manioc beer, fermented with sweet potato and their own saliva, from an early age.</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "walking-masato.jpg", :size => "800x600" %>
+          <div class="carousel-caption">
+            <p>Wherever they go, masato goes with them. Women accompany their husbands on hunting trips, carrying a pot of thick masato in a basket on their backs, which is mixed with stream water before serving. They also serve large amounts during all communal activities to keep the workers cheery and slightly tipsy, so that hard work is made easier and time flies by with joking and singing. And when the work is over they party into the night.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#slideshow" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#slideshow" data-slide="next">&rsaquo;</a>
+    </div>
+    
+    <hr />
+
+    <h2>Visions</h2>
+    
+    <p>Both boys and girls undertake a special ritual around the age of puberty to ask for a vision to guide their lives. It is a ritual undertaken alone, and is a test of bravery.</p>
+
+    <p>The child leaves the village early, fasting from dawn and walking into the forest singing or whistling special tunes to call the spirits close and ask them for a good vision. They walk for several hours until they reach a water source, where they build a small lean-to. Then they clear a straight path going away from the lean-to in both directions, and finally bathe in the stream or pool.</p>
+
+    <p>As night falls they drink a bowl of tobacco juice, previously prepared by one of the elders of the community. The elderly man or woman prepares the tobacco by chewing it, as this releases its power and the visions they had in their childhood may be passed on to the next generation through contact with their saliva.</p>
+
+    <p>The tobacco provokes vivid dreams; dreams with the spirits of the Achuar ancestors known as <em>Arutam</em>. They say that the <em>Arutam</em> come along the recently cleared path so it is important that not a single stick is left, upon which it could stumble. The <em>Arutam</em> appear in their dreams as a powerful or dangerous animal, such as a jaguar, an anaconda, an alligator or an eagle. The child must not be scared, but must welcome the spirit, who will then show them the vision of their future they have been seeking.</p>
+
+    <p>The <em>Arutam</em> gives different visions depending upon the form it takes when it appears, it could be that of a long life, power to lead, to be a fearless warrior, bravery, a love for travel or a large, united, healthy and hardworking family. Of all the places in the forest, waterfalls are the best places to go to search for a vision as this is where the <em>Arutam</em> reside, and as such they are sacred and treated with special respect.</p>
+
+    <hr />
+
+    <h2>Anents</h2>
+
+    <p>The songs which call the <em>Arutam</em> and ask for their power to be passed on are called <em>anent</em>. <em>Anent</em> are charms with the power to attract a desired thing or being and ensure that events work out favourably, working in the physical and emotional worlds. There are <em>anent</em> for searching for a vision, <em>anent</em> to ensure the growth of plants, <em>anent</em> for curing the sick, <em>anent</em> to attract game animals and <em>anent</em> to make someone fall in love or return home if missed.</p>
+
+    <p><em>Anent</em> can be sung aloud softly, whistled or simply recited in silence. Children learn <em>anent</em> from their parents, aunts and uncles and grandparents and so these songs, which allow the Achuar to communicate with all the beings that surround them, pass from generation to generation.</p>
+    
+  </div>
+</div>
+<div id="territory">
+  <div class="container">
+    
+    <h2>Territory</h2>
+    
+    <%= image_tag "siwin-map.jpg", :size => "800x450" %>
+    
+    <p>The Pastaza basin has been occupied by Achuar for many generations. The old gardens, rivers and streams, waterfalls and footpaths throughout their landscape serve to remind them of their ancestors and how they transformed the forest. The landscape is scattered with stories of wars, witchcraft accusations, meetings with forest spirits, large parties and ritual ceremonies.</p>
+
+    <p>The land and its resources are fundamental to the Achuar’s physical and spiritual wellbeing. Their territory is the source of their identity and provides the link between the past and the present. Without their territory the Achuar could not continue as a people, as they would not simply be missing food and shelter, but all the resources, material and immaterial which create Achuar minds, bodies and spirits, and sustain their social and cultural activities and memory.</p>
+
+    <p>The Peruvian State has recognised the Achuar’s occupation of their land with Native Community titles. However these titles only cover a third of the ancestral lands they use daily for hunting, collecting forest products, during visits to other communities and on their journeys in search of visions from the <em>arutam</em>.</p>
+
+  </div>
+</div>
+<div id="oil">
+  <div class="container">
+    <h2>Oil and Development</h2>
+
+    <p>Everything that is precious to the Achuar is under imminent threat from oil drilling and exploration in their ancestral territory by Canadian company Talisman Energy.</p>
+
+    <p>The Achuar have made clear their opposition to this concession and have not allowed the companies to start any activities on their land. Despite this the Peruvian State still does not recognise the Achuar’s decision and continues to offer this, and other new, neighbouring blocks, to interested companies.</p>
+
+    <p>The creation of Block 64 is part of an ongoing State project to open up the Amazon basin to petrol exploitation. In 2007, 70% of the Peruvian Amazon was overlapped with petrol blocks, in many cases without the consultation or consent of the local indigenous population, whose lives are likely to be changed irrevocably by such operations. These actions contravene ILO Convention 169 and the UN Declaration of Indigenous Rights, of which Peru is a signatory. </p>
+
+    <p>The Achuar of the Pastaza’s resistance to petrol developments comes from their desire to protect the environment on which their lifestyle and identities depend. They are determined not allow a repetition of the tragedy which has befallen the land of their relatives, the Achuar of the river Corrientes, where the rivers and forests have been polluted and the local ecosystem destroyed by almost forty years of petrol operations. Given that their existence depends entirely upon the water, flora and fauna, any damage to these will inevitably have serious implications on their own wellbeing.</p>
+
+    <p>They are particularly worried about the health of their children. Clinical tests carried out by the Ministry of Health have shown that most of the children living in the petrol affected areas of Corrientes have dangerously high concentrations of lead in their blood.</p>
+    <div class="three-images cf">
+      <%= image_tag "oil-1.jpg", :size => "250x250" %>
+      <%= image_tag "oil-2.jpg", :size => "250x250" %>
+      <%= image_tag "oil-3.jpg", :size => "250x250" %>
+    </div>
+    
+  </div>
+</div>
+<div id="action">
+  <div class="container">
+    
+    <iframe id="get_involved_iframe" src="/get_involved" frameborder="0" width="100%" height="0" allowtransparency="true"></iframe>
+    
+  </div>
+</div>
+<div id="credits">
+  <div class="container cf">
+    <ul>
+      <li>
+        <h3>Website</h3>
+        <a href="http://www.amazonwatch.org/">
+          <p><%= image_tag "aw-logo-white.png", :size => "150x104" %><br>
+          <a href="http://www.amazonwatch.org">www.amazonwatch.org</a></p>
+          <p>221 Pine St Suite 400<br>
+          San Francisco, CA</p>
+        </a>
+      </li>
+      <li>
+        <h3>Design</h3>
+        <p><a href="http://www.gabylopez.com/">Gabriela Lopez</a></p>
+        <p>Aliya Ryan</p>
+      </li>
+      <li>
+        <h3>Video</h3>
+        <p>Fernando Valdivia</p>
+        <p><a href="http://www.teleandes.tv/">TeleAndes Productions</a></p>
+      </li>
+      <li>
+        <h3>Production</h3>
+        <p>Shinai</p>
+        <p>Racimos de Ungurahui</p>
+        <p>National Achuar Federation of Peru (FENAP)</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
