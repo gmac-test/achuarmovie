@@ -1,12 +1,12 @@
 $(function($) {
-    $("#achuar").load("achuar.html #achuar .container", function() { 
+    $("#achuar").load(htmllang+"/achuar.html section .container", function() { 
         $('body').scrollspy('refresh');
         $('#slideshow').carousel( { pause: 'none' }).carousel('pause');
     });
-    $("#territory").load("territory.html #territory .container", function() { 
+    $("#territory").load(htmllang+"/territory.html section .container", function() { 
         $('body').scrollspy('refresh');
     });
-    $("#oil").load("oil.html #oil .container", function() { 
+    $("#oil").load(htmllang+"/oil.html section .container", function() { 
         $('body').scrollspy('refresh'); 
     });
 });

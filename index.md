@@ -1,6 +1,8 @@
 ---
 layout: index
 title: Chumpi & the Waterfall
+lang: en
+quote: We’re going to prove that a future without the oil company is possible
 ---
 **Chumpi & the Waterfall** ([TeleAndes](http://www.teleandes.tv/)) was filmed in the Achuar community of Chicherta in the Peruvian Amazon Rainforest, the last community on the Huasaga River before the border with Ecuador. This is a headwater area, where the forest is full of animals and the rivers teem with fish. Daily life is usually peaceful and calm.
 

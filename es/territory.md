@@ -1,6 +1,7 @@
 ---
 layout: territory
 title: Territory
+lang: es
 ---
 
 ##Territory

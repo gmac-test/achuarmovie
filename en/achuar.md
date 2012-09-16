@@ -1,6 +1,7 @@
 ---
 layout: achuar
 title: The Achuar
+lang: en
 ---
 
 ##The Achuar
@@ -12,7 +13,7 @@ Around 16,000 indigenous Achuar live in small villages along the rivers and in t
 They also have large gardens where they grow many different agricultural crops including plants for eating, making drinks, painting and adorning their bodies, making household utensils, medicines, poisons and some with special powers that help you dream, communicate with the spirits, see your future or bewitch and seduce a desired lover. Amongst all the species the Achuar grow, wayus, manioc and tobacco are three crucial to nurturing the Achuar mind, body and spirit.
 
 > “Wikia achuar aintsuitgai”
->  <cite>"I am an Achuar person"</cite>
+>  <cite>“I am an Achuar person”</cite>
 
 For many years these Achuar communities have dreamt of introducing themselves, their way of life and the beauty of their ancestral lands to the rest of the country and the world. For the Achuar, a dream is not simply a passing, nocturnal illusion without relation to one’s waking life. On the contrary, dreams are gateways allowing communication with the spirits of their ancestors, who come to visit and talk to the living, giving them advice and a vision of their future so that they can tread a clear path in life.
 
@@ -22,7 +23,7 @@ The vision which the Achuar share is to protect their ancestral lands and leave 
 
 ##Daily Life
 
-{% include achuar_slideshow.html %}
+{% include en/achuar_slideshow.html %}
 
 ---
 
