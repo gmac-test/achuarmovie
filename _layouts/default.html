@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Achuar Movie</title>
   <meta name="description" content="Meet Chumpi, a young indigenous Achuar boy from Chicherta Village in the remote headwaters of an Amazon tributary deep in the Peruvian rainforest.">
   <meta name="author" content="Amazon Watch">
-  <meta property="og:title" content="Chumpi & the Waterfall"/>
+  <meta property="og:title" content="{{ page.title }}"/>
   <meta property="og:type" content="video.other"/>
   <meta property="og:url" content="https://www.achuarmovie.org/"/>
   <meta property="og:image" content="https://s3.amazonaws.com/achuarmovie/assets/chumpi-cropped.jpg"/>
@@ -18,37 +19,34 @@
   <!-- Styles -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <!--[if (!IE)|(gte IE 8)]><!-->
-    <%= stylesheet_link_tag "pages" %>
+    <link href="/assets/page.css" media="screen" rel="stylesheet" type="text/css" />
   <!--<![endif]-->
   <!--[if lte IE 7]>
-    <%= stylesheet_link_tag "pages" %>
+    <link href="/assets/page.css" media="screen" rel="stylesheet" type="text/css" />
   <![endif]-->
 
   <!-- HTML5 shim, for IE6-8 support of HTML elements -->
   <!--[if lt IE 9]>
-    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   
-  <script src="assets/yepnope.1.0.2-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/yepnope/1.5.4/yepnope.min.js"></script>
 
   <script type="text/javascript">
-    yepnope({
-      load: ['https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
-             '<%= javascript_path('index.js') %>'
-            ],
-            callback: function(url, result, key) {
-            }
-    });
     window._gaq = [['_setAccount','UA-28551290-1'],['_trackPageview']];
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+    yepnope({
+      load: ['//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
+             '/assets/site.js',
+             (document.location.protocol === 'https:' ? '//ssl' : 'http://www') + '.google-analytics.com/ga.js'
+            ]
+    });
   </script>
   
 </head>
 <body>
-  {{ content }}
+{% include nav.html %}
+{% include share.html %}
+{{ content }}
+{% include footer.html %}
 </body>
 </html>

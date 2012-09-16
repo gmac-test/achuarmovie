@@ -1,0 +1,493 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+body {
+  background-color: #c2cd7c;
+  font-family: "Arial", sans-serif;
+  font-size: 15.5px;
+  font-weight: normal;
+  line-height: 1.5em;
+  color: #333;
+}
+  
+.topbar {
+  height: 52px;
+  background: #141414;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  overflow: visible;
+}
+.topbar a {
+  color: #bfbfbf;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.topbar div > ul, .nav {
+  display: block;
+  margin: 8px 0;
+  position: relative;
+  padding: 0;
+}
+.topbar div > ul > li, .nav > li {
+  float: left;
+  list-style-image: url("/images/embed/bullet.png");
+  margin-left: 40px;
+  padding-left: 20px;
+  font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.topbar div > ul > li:first-child, .nav > li:first-child {
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+}
+.topbar div > ul a, .nav a {
+  display: block;
+  float: none;
+  padding: 8px 10px;
+  line-height: 19px;
+  text-decoration: none;
+}
+.topbar div > ul a:hover, .nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.topbar div > ul .active > a, .nav .active > a, .nav a:active {
+  background-color: #373737;
+  color: #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  
+}
+
+.topbar div > ul .highlight > a, .nav .highlight > a {
+  background-color: #9d261d;
+  color: #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  
+}
+
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+
+  /* Override some defaults */
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 90px;
+    display: block;
+  }
+  
+  #map-container {
+    position: relative;
+    height: 450px;
+    z-index: 4;
+    margin-bottom: 23px;
+  }
+  #map {
+    height: 450px;
+    background-color: white;
+  }
+  #map img, #credits img {
+    border: 0;
+  }
+  
+  #chumpi {
+    background: #c2cd7c url("/images/background-1.png") no-repeat scroll bottom center;
+    padding-bottom: 300px;
+    padding-top: 10px;
+    position: relative;
+    bottom: -50px;
+  }
+  #achuar {
+    padding-top: 70px;
+    padding-bottom: 400px;
+    background: #9ecdcf url("/images/background-2.png") no-repeat scroll bottom center;
+
+  }
+  #territory {
+    padding-top: 70px;
+    background: #afada3 url("/images/background-3.png") no-repeat scroll bottom center;
+    padding-bottom: 70px;
+  }
+  #oil {
+    padding-top: 70px;
+    background: #494743;
+    padding-bottom: 50px;
+  }
+  #oil p {
+    color: #ccc;
+  }
+  #action {
+    padding-top: 70px;
+    background: #c2cd7c;
+    min-height: 550px;
+    background: url("/images/embed/pajaros-2.png") no-repeat 50% 55px;
+  }
+  #credits {
+    background: #141414;
+    padding-top: 25px;
+    color: #aaa;
+    min-height: 300px;
+  }
+  #credits p {
+    margin: 10px 0;
+  }
+  #credits a {
+    color: #ccc;
+  }
+  #credits ul {
+    margin: 0 0 0 -20px;
+    padding: 0;
+  }
+  #credits li {
+    list-style-type: none;
+    width: 185px;
+    float: left;
+    margin: 0 0 0 20px;
+  }
+  
+  hr {
+    border: 0;
+    margin: 5em auto;
+    width: 100%;
+    height: 14px;
+    background: url("/images/hr.png") no-repeat center center;
+  }
+  h1,h2,h3, a.play {
+    font-family: "Montserrat", "Helvetica", "Sans-Serif";
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    margin-top: 0;
+  }
+  h1 {
+    font-size: 55px;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 36px;
+    margin-bottom: 1.5em;
+  }
+  img {
+    border: 1px solid white;  
+  }
+  .video {
+    width: 802px;
+    height: 450px;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  a.play {
+    position: absolute;
+    display: block;
+    width: 800px;
+    height: 430px;
+    margin: 1;
+    background: url("/images/embed/play-button.png") no-repeat 50% -86px;
+    font-size: 54px;
+    padding: 10px;
+    line-height: 1em;
+    text-indent: -2000px;
+  }
+  a.play:hover {
+    background-position: 50% 182px;
+    cursor: pointer;
+  }
+  .video iframe {
+    border: 1px solid white;
+    background: #000 url("/images/chumpi-cropped.jpg") no-repeat center;
+  }
+  iframe.loading {
+    background-image: url("/images/loading.gif");
+  }
+  iframe#get_involved_iframe {
+    background-color: transparent;
+  }
+  
+  img.map {
+    margin: 0 auto 30px auto;
+    display: block;
+  }
+  img.madre {
+    border: 0 none;
+    padding-top: 45px;
+  }
+  img.float-right {
+    float: right;
+    margin: 0 0 45px 45px;
+  }
+  .container p {
+    margin-bottom: 23px;
+  }
+  .three-images {
+    width: 822px;
+    margin-left: -22px;
+  }
+  .three-images img {
+    float: left;
+    margin: 0 0 0 22px;
+  }
+  blockquote {
+    font-size: 40px;
+    font-family: Georgia;
+    font-color: #4f4f4f;
+    line-height: 1.2em;      
+  }
+  .birds {
+    background: url("/images/embed/pajaros.png") no-repeat scroll 90% 100%;
+    width: 880px;
+    margin-top: -30px;
+  }
+  .birds blockquote {
+    display: block;
+    width: 550px;
+    padding: 70px 250px 70px 0px;
+    margin: 0;
+  }
+  
+  blockquote.wikia, cite {
+    display: block;
+    text-align: center;
+    margin: 23px 0;
+  }
+  
+  .alpha60 {
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgb(0, 0, 0) transparent;
+  /* RGBa with 0.6 opacity */
+  background: rgba(0, 0, 0, 0.6);
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  }
+  
+  cite {
+    font-size: 18px;
+    font-family: Georgia, Times, serif;
+    line-height: 1.2em;
+    margin-bottom: 23px;
+  }
+  
+  .share {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    margin-left: -490px;
+        width: 58px;
+  }
+  .share-this {
+    margin: 0 0 -122px;
+    position: relative;
+    top: 150px;
+    left: -60px;
+    height: 122px;
+    width: 134px;
+    background: url("/images/share-this.png") no-repeat scroll left bottom;
+    text-indent: -2000px;
+    z-index: 2;
+  }
+  .share ul {
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .share li {
+    display: block;
+    width: 58px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .share a {
+    display: block;
+    margin:0;
+    padding:0;
+    width: 58px;
+    height: 61px;
+    text-indent: -2000px;
+    cursor: pointer;
+    background: url("/images/embed/share-buttons.png") no-repeat;
+    z-index: 2;
+    position: relative;
+  }
+  .share a.twitter {
+    background-position: 0px 0px;
+  }
+  .share a.facebook {
+    background-position: 0px -61px;
+  }
+  .share a.email {
+    background-position: 0px -122px;
+  }
+  .share a.twitter:hover {background-position: -58px 0px; }
+  .share a.facebook:hover {background-position: -58px -61px; }
+  .share a.email:hover {background-position: -58px -122px; }
+  
+  .carousel {
+    position: relative;
+    margin-bottom: 18px;
+  }
+  .carousel-inner {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+  }
+  .carousel .item {
+    display: none;
+    position: relative;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -ms-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+  }
+  .carousel .item > img {
+    display: block;
+    line-height: 1;
+    margin: 0 auto;
+    border: 0;
+  }
+  .carousel .active, .carousel .next, .carousel .prev {
+    display: block;
+  }
+  .carousel .active {
+    left: 0;
+  }
+  .carousel .next, .carousel .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .carousel .next {
+    left: 100%;
+  }
+  .carousel .prev {
+    left: -100%;
+  }
+  .carousel .next.left, .carousel .prev.right {
+    left: 0;
+  }
+  .carousel .active.left {
+    left: -100%;
+  }
+  .carousel .active.right {
+    left: 100%;
+  }
+  .carousel-control {
+    position: absolute;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    top: 40%;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #222222;
+    border: 3px solid #ffffff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  .carousel-control.right {
+    left: auto;
+    right: 15px;
+  }
+  .carousel-control:hover {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+  }
+  .carousel-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 15px 5px;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.75);
+  }
+  .carousel-caption h4, .carousel-caption p {
+    color: #ffffff;
+    margin: 0 0 0.5em;
+  }
+  
+  .slideshow div {
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0) transparent;
+    /* RGBa with 0.4 opacity */
+    background: rgba(0, 0, 0, 0.4);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000, endColorstr=#66000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000, endColorstr=#66000000)";
+  }
